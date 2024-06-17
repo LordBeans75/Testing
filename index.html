@@ -6,22 +6,15 @@
     <title>Sweet Sage Studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function isMobileDevice() {
-            return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-        }
-
-        if (isMobileDevice()) {
-            window.location.href = "mobile-index.html";
-        }
-    </script>
 </head>
 <body>
     <header>
         <div class="container">
             <img src="images/Sweet Sage StudioFINAL_03_2500px.png" alt="Sweet Sage Studio Logo" class="logo">
             <nav>
-                <ul>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="merch.html">Merch</a></li>
                     <li><a href="schedule.html">Schedule</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -50,5 +43,12 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>

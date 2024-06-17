@@ -47,9 +47,21 @@ header .logo {
     height: 50px;
 }
 
+nav {
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
@@ -65,6 +77,31 @@ nav a {
 
 nav a:hover {
     color: #F4C2C2;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #6B8E23;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
 
 main {
