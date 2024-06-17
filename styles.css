@@ -38,7 +38,9 @@ section {
 }
 
 #hero {
-    background: linear-gradient(rgba(107, 142, 35, 0.3), rgba(107, 142, 35, 0.3)), url('images/Yoga.avif') no-repeat center center/cover;
+    position: relative;
+    background: url('images/eneko-urunuela-I2YSmEUAgDY-unsplash.jpg') no-repeat center center;
+    background-size: cover; /* Ensures the image covers the entire section */
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -46,6 +48,20 @@ section {
     min-height: calc(100vh - 70px);
     text-align: center;
     margin: 0;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px; /* Added padding for better readability */
 }
 
 #hero .container {
@@ -77,11 +93,11 @@ button {
 }
 
 button:hover {
-    background-color: #F4C2C2
+    background-color: #F4C2C2;
 }
 
 footer {
-    background-color: #6B8E23;
+    background-color: #4b6418;
     color: #FFFFFF;
     text-align: center;
     padding: 10px 0;
@@ -156,7 +172,7 @@ footer .creator-logo {
 
 /* Navigation Bar Styles */
 header {
-    background: linear-gradient(135deg, #6B8E23, #556B2F);
+    background: linear-gradient(135deg, #4b6418, #4b6418);
     color: #FFFFFF;
     padding: 10px 0; /* Adjusted padding to reduce the white bar */
     position: fixed;
@@ -208,7 +224,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #6B8E23;
+    color: #4b6418;
     background-color: #FFFFFF;
 }
 
@@ -224,7 +240,7 @@ nav a:hover {
         top: 60px;
         left: 0;
         right: 0;
-        background-color: #6B8E23;
+        background-color: #4b6418;
         width: 100%;
         padding: 10px 0;
         text-align: center;
@@ -236,7 +252,7 @@ nav a:hover {
     }
 
     nav li {
-        margin: 10px 0;
+        margin: 1px 0;
     }
 
     nav li a {
@@ -246,24 +262,24 @@ nav a:hover {
         text-align: center;
         color: #FFFFFF;
         text-decoration: none;
-        background-color: #6B8E23;
+        background-color: #4b6418;
         transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-        border: 1px solid #8FBC8F;
+        border: 1px solid #314210;
         border-radius: 5px;
         margin: 5px auto;
     }
 
     nav li a:hover {
-        background-color: #F4C2C2;
-        color: #6B8E23;
-        border: 1px solid #6B8E23;
+        background-color: #FFFFFF;
+        color: #4b6418;
+        border: 1px solid #4b6418;
     }
 }
 
 /* Instructors Page Specific Styles */
 #instructors {
     position: relative;
-    background: url('images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg') no-repeat center center/cover; /* Using the new background image */
+    background: url('images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg') no-repeat center center/cover;
     color: #F5F5F5;
     min-height: calc(100vh - 70px); /* Ensure it covers the full viewport height minus the header */
     display: flex;
@@ -272,14 +288,17 @@ nav a:hover {
 }
 
 #instructors .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0) 100%);
     padding: 60px 20px; /* Added padding for better readability */
     width: 100%;
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center content vertically */
 }
 
 #instructors h1 {
@@ -297,8 +316,8 @@ nav a:hover {
 }
 
 .instructor-card {
-    background-color: #FFFFFF;
-    border: 1px solid #E0E0E0;
+    background-color: #4b6418;
+    border: 1px solid #4b6418;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -329,10 +348,10 @@ nav a:hover {
 .instructor-card h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #2C3E50;
+    color: #FFFFFF;
 }
 
 .instructor-card p {
     font-size: 16px;
-    color: #666666;
+    color: #FFFFFF;
 }
