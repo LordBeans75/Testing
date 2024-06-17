@@ -25,10 +25,140 @@ body {
     margin: 0 auto;
 }
 
+main {
+    padding-top: 70px; /* Adjusted padding to match the height of the header */
+    flex: 1;
+    width: 100%;
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#hero {
+    background: linear-gradient(rgba(107, 142, 35, 0.3), rgba(107, 142, 35, 0.3)), url('images/Yoga.avif') no-repeat center center/cover;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+    text-align: center;
+    margin: 0;
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #C49FD9;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #F4C2C2
+}
+
+footer {
+    background-color: #6B8E23;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .created-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .created-by p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+footer .creator-logo {
+    height: 30px;
+}
+
+/* Schedule Page Specific Styles */
+#schedule iframe {
+    width: 100%;
+    height: 600px;
+    border: 0;
+}
+
+/* About Page Specific Styles */
+#about {
+    position: relative;
+    background: url('images/stormseeker-Vz9A8luADG4-unsplash.jpg') no-repeat center center/cover;
+    color: #FFFFFF;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about .overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0) 100%);
+    padding: 60px 20px; /* Added padding for better readability */
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#about h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar Styles */
 header {
     background: linear-gradient(135deg, #6B8E23, #556B2F);
     color: #FFFFFF;
-    padding: 15px 0;
+    padding: 10px 0; /* Adjusted padding to reduce the white bar */
     position: fixed;
     width: 100%;
     top: 0;
@@ -111,89 +241,98 @@ nav a:hover {
 
     nav li a {
         display: block;
-        padding: 10px 20px; /* Add padding to left and right */
-        width: calc(100% - 40px); /* Adjust width to account for padding */
+        padding: 10px 20px;
+        width: calc(100% - 40px);
         text-align: center;
         color: #FFFFFF;
         text-decoration: none;
         background-color: #6B8E23;
         transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-        border: 1px solid #8FBC8F; /* Updated border color */
-        border-radius: 5px; /* Add border radius */
-        margin: 5px auto; /* Center items and add margin to separate them */
+        border: 1px solid #8FBC8F;
+        border-radius: 5px;
+        margin: 5px auto;
     }
 
     nav li a:hover {
         background-color: #F4C2C2;
         color: #6B8E23;
-        border: 1px solid #6B8E23; /* Change border color on hover */
+        border: 1px solid #6B8E23;
     }
 }
 
-main {
-    padding-top: 70px; /* Adjusted to be less than the header height */
-    flex: 1;
+/* Instructors Page Specific Styles */
+#instructors {
+    position: relative;
+    background: url('images/mohamed-nohassi-odxB5oIG_iA-unsplash.jpg') no-repeat center center/cover; /* Using the new background image */
+    color: #F5F5F5;
+    min-height: calc(100vh - 70px); /* Ensure it covers the full viewport height minus the header */
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
+}
+
+#instructors .overlay {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0) 100%);
+    padding: 60px 20px; /* Added padding for better readability */
     width: 100%;
-}
-
-section {
-    padding: 60px 0;
-    text-align: center;
-    width: 100%;
-}
-
-#hero {
-    background: linear-gradient(rgba(107, 142, 35, 0.3), rgba(107, 142, 35, 0.3)), url('images/Yoga.avif') no-repeat center center/cover;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 70px); /* Adjust height to account for header */
-    text-align: center;
-    margin: 0; /* Ensure no margin */
-}
-
-#hero .container {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 0; /* Ensure no padding */
 }
 
-#hero h1 {
+#instructors h1 {
     font-size: 48px;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 24px;
     margin-bottom: 40px;
-}
-
-button {
-    background-color: #C49FD9;
-    color: #FFFFFF;
-    border: none;
-    padding: 15px 30px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #F4C2C2;
-}
-
-footer {
-    background-color: #6B8E23;
-    color: #FFFFFF;
     text-align: center;
-    padding: 10px 0; /* Reduced padding */
-    width: 100%;
-    margin-top: auto; /* Ensure it stays at the bottom of the content */
+    color: #FFFFFF;
+}
+
+#instructors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1;
+}
+
+.instructor-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.instructor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.instructor-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.instructor-card:hover img {
+    transform: scale(1.1);
+}
+
+.instructor-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.instructor-card p {
+    font-size: 16px;
+    color: #666666;
 }
