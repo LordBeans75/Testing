@@ -144,7 +144,7 @@ section {
 }
 
 #hero {
-    background: linear-gradient(rgba(107, 142, 35, 0.6), rgba(107, 142, 35, 0.6)), url('images/Yoga.avif') no-repeat center center/cover;
+    background: linear-gradient(rgba(107, 142, 35, 0.3), rgba(107, 142, 35, 0.3)), url('images/Yoga.avif') no-repeat center center/cover;
     color: #FFFFFF;
     display: flex;
     align-items: center;
