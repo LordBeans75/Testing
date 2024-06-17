@@ -1,0 +1,149 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #F5F5F5;
+    color: #2E8B57;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #6B8E23;
+    color: #FFFFFF;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #F4C2C2;
+}
+
+main {
+    padding-top: 70px; /* Adjusted to be less than the header height */
+    flex: 1;
+    width: 100%;
+    overflow-y: auto; /* Allow scrolling within the main content area */
+}
+
+section {
+    padding: 60px 0;
+    text-align: center;
+    width: 100%;
+}
+
+#hero {
+    background: linear-gradient(rgba(107, 142, 35, 0.6), rgba(107, 142, 35, 0.6)), url('images/Yoga.avif') no-repeat center center/cover;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px); /* Adjust height to account for fixed header */
+    text-align: center;
+    margin: 0; /* Ensure no margin */
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Ensure no padding */
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+button {
+    background-color: #C49FD9;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #F4C2C2;
+}
+
+footer {
+    background-color: #6B8E23;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+footer .created-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer .created-by p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+footer .creator-logo {
+    height: 30px;
+}
