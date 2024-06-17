@@ -26,15 +26,15 @@ body {
 }
 
 header {
-    background-color: #6B8E23;
+    background: linear-gradient(135deg, #6B8E23, #556B2F);
     color: #FFFFFF;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .container {
@@ -53,7 +53,7 @@ nav {
 
 .menu-icon {
     display: none;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
 }
 
@@ -65,18 +65,21 @@ nav ul {
 }
 
 nav li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 nav a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 nav a:hover {
-    color: #F4C2C2;
+    color: #6B8E23;
+    background-color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
