@@ -1,3 +1,11 @@
+//collapsed nav bar
+function toggleMenu() {
+    var navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('show');
+}
+
+//Insturctors cards
+
 document.addEventListener('DOMContentLoaded', function() {
     const instructors = [
         {
@@ -10,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
             bio: 'Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh.',
             image: 'images/brooke-cagle-LnT_OqSf6Bs-unsplash.jpg'
         },
-        // Add more instructors here
+// Add more instructors here
     ];
 
     const instructorsList = document.getElementById('instructors-list');
-
+//displays each instructor card
     instructors.forEach(instructor => {
         const card = document.createElement('div');
         card.classList.add('instructor-card');

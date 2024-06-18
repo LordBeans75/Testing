@@ -45,7 +45,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh);
     text-align: center;
     margin: 0;
 }
@@ -228,7 +228,7 @@ nav a:hover {
     background-color: #FFFFFF;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 818px) {
     .menu-icon {
         display: block;
     }
@@ -241,10 +241,10 @@ nav a:hover {
         left: 0;
         right: 0;
         background-color: #4b6418;
-        width: 100%;
+        width: 100vw;
         padding: 10px 0;
         text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     nav ul.show {
